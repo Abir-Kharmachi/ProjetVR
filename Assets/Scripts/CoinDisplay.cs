@@ -1,27 +1,16 @@
 using System.Collections;
 using System.Collections.Generic;
-
 using UnityEngine;
 using UnityEngine.UI;
  
 public class CoinDisplay : MonoBehaviour
 {
-    public Text coinText;  // Le texte UI à mettre à jour
+    public Text coinText;  // Le texte UI qui affiche le compteur
  
-
-    void Start()
-    {
-	    if (coinText == null)
-	    {
-		  coinText = GameObject.Find("Text").GetComponent<Text>();
-	}
-}
-    
-
     void Update()
     {
-        // Mettre à jour le texte UI avec le nombre de pièces collectées
-        coinText.text = "Pièces : " + CoinInteraction.coinCount;
+        // Mettre Ã  jour le texte UI avec le nombre de piÃ¨ces collectÃ©es
+        coinText.text = "PiÃ¨ces : " + CoinGrab.coinCount;
     }
 }
 

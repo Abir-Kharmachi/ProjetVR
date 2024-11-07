@@ -5,12 +5,20 @@ using UnityEngine.UI;
  
 public class CoinDisplay : MonoBehaviour
 {
-    public Text coinText;  // Le texte UI qui affiche le compteur
+    public Text coinText; 
+    private int MaxcoinsToCollect = 25; // Le texte UI qui affiche le compteur
  
     void Update()
     {
-        // Mettre à jour le texte UI avec le nombre de pièces collectées
-        coinText.text = "Pièces : " + CoinGrab.coinCount;
+
+          if (CoinGrab.coinCount >= MaxcoinsToCollect)
+        {
+           coinText.text = "Bravo, vous avez réussi à collecter toutes les pièces !"; 
+        }else{
+            coinText.text = "Pièces : " + CoinGrab.coinCount; // Ajuste le texte si besoin
+    }
+
+
     }
 }
 

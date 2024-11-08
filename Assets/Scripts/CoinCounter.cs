@@ -1,12 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI; // Utilise ceci si tu utilises le composant Text
-// using TMPro; // D�commente ceci si tu utilises TextMeshPro
+using UnityEngine.UI; 
+
 
 public class CoinCounter : MonoBehaviour
 {
-    public Text coinText; // Remplace par TextMeshProUGUI si tu utilises TextMeshPro
+    public Text coinText; 
     private int coinCount = 0;
     
     void Start()
@@ -19,13 +19,11 @@ public class CoinCounter : MonoBehaviour
         coinCount++;
         UpdateCoinText();
 
-        
     }
 
     private void UpdateCoinText()
     {   
-        coinText.text = "Coins: " + coinCount; // Ajuste le texte si besoin
+        coinText.text = "Coins: " + coinCount; 
     }
-        
         
 }

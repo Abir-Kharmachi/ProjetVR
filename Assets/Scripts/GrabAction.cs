@@ -1,9 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
-
-using UnityEngine;
 using UnityEngine.XR.Interaction.Toolkit;
  
 public class GrabAction : MonoBehaviour
@@ -13,8 +10,6 @@ public class GrabAction : MonoBehaviour
     void Start()
     {
         grabInteractable = GetComponent<XRGrabInteractable>();
- 
-        // Associer les événements de saisie et de relâchement
         grabInteractable.onSelectEntered.AddListener(OnGrab);
         grabInteractable.onSelectExited.AddListener(OnRelease);
     }
@@ -22,13 +17,11 @@ public class GrabAction : MonoBehaviour
     private void OnGrab(XRBaseInteractor interactor)
     {
         Debug.Log("Objet saisi !");
-        // Exécutez des actions supplémentaires ici, par exemple changer de couleur
     }
  
     private void OnRelease(XRBaseInteractor interactor)
     {
         Debug.Log("Objet relâché !");
-        // Exécutez des actions supplémentaires ici, comme restaurer la couleur d'origine
     }
  
     void OnDestroy()

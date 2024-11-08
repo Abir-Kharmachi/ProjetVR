@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class CoinDisplay : MonoBehaviour
 {
     public Text coinText; 
-    private int MaxcoinsToCollect = 25; // Le texte UI qui affiche le compteur
+    private int MaxcoinsToCollect = 25;
  
     void Update()
     {
@@ -15,10 +15,8 @@ public class CoinDisplay : MonoBehaviour
         {
            coinText.text = "Bravo, vous avez réussi à collecter toutes les pièces !"; 
         }else{
-            coinText.text = "Pièces : " + CoinGrab.coinCount; // Ajuste le texte si besoin
+            coinText.text = "Pièces : " + CoinGrab.coinCount;
     }
-
-
     }
 }
 

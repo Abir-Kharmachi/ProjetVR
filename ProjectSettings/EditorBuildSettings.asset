@@ -4,7 +4,10 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Old Sea Port/scenes/Dock Thing.unity
+    guid: f4fc660ad7cf6eb4eb8cd6d109f7608e
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: c9ba19c1b0c974f4e8674b21c5de27ba, type: 2}
     com.unity.xr.arfoundation.simulation_settings: {fileID: 11400000, guid: 92c73d40ce0625342966e70f2eee4fe0, type: 2}
